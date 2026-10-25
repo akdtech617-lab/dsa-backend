@@ -1,0 +1,41 @@
+{
+  "name": "dsa-platform-backend",
+  "version": "1.0.0",
+  "description": "Backend for the 3D AI-powered software engineering learning platform",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "node src/config/migrate.js",
+    "seed": "node src/config/seed.js",
+    "seed:basics": "node src/config/seedBasicsTopic.js",
+    "seed:maths": "node src/config/seedBasicMaths.js",
+    "seed:recursion": "node src/config/seedBasicRecursion.js",
+    "seed:hashing": "node src/config/seedBasicHashing.js",
+    "seed:sorting": "node src/config/seedSorting.js",
+    "seed:arrays": "node src/config/seedArrayProblems.js",
+    "seed:medium-arrays": "node src/config/seedMediumArrayProblems.js",
+    "seed:hard-arrays": "node src/config/seedHardArrayProblems.js",
+    "seed:binary-search": "node src/config/seedBinarySearch1D.js",
+    "seed:binary-search-2d": "node src/config/seedBinarySearch2D.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "express-validator": "^7.2.0",
+    "google-auth-library": "^9.14.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.12.0",
+    "socket.io": "^4.8.4",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
